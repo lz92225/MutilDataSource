@@ -1,0 +1,28 @@
+server:
+  port: 9001
+
+spring:
+  security:
+    user:
+      password: ceshi
+      name: ceshi
+  datasource:
+    #    password: root
+    #    url: jdbc:mysql://localhost:3306/master?useUnicode=true&characterEncoding=UTF-8
+    #    driver-class-name: com.mysql.jdbc.Driver
+    #    username: root
+    druid:
+      muster:
+        password: root
+        jdbc-url: jdbc:mysql://localhost:3306/master?useUnicode=true&characterEncoding=UTF-8
+        driver-class-name: com.mysql.jdbc.Driver
+        username: root
+
+      cluster:
+        password: root
+        jdbc-url: jdbc:mysql://localhost:3306/cluster?useUnicode=true&characterEncoding=UTF-8
+        driver-class-name: com.mysql.jdbc.Driver
+        username: root
+logging:
+  level:
+    com.demo.dao: debug
